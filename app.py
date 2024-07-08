@@ -17,8 +17,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 # Set API keys
-# os.environ["GROQ_API_KEY"] = "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"
-
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 st.title("Document QA with LangChain")
 
 # File uploader
